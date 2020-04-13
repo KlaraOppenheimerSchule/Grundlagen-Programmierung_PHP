@@ -1,9 +1,9 @@
 <?php
 class Book {
-    public $isbn;
-    public $title;
-    public $author;
-    public $available;
+    private $isbn;
+    private $title;
+    private $author;
+    private $available;
 
     public function __construct(string $isbn, string $title, string $author, bool $available)
     {
@@ -14,9 +14,9 @@ class Book {
     }
 
     public function getPrintableTitle(): string {
-        $result = '<i>' . $this->title . '</i> - ' . $this->author;
+        $result = $this->title . " " . $this->author;
         if(!$this->available) {
-            $result .= ' <b>Not available</b>'; }
+            $result .= 'Not available'; }
             return $result;
     }
 }
