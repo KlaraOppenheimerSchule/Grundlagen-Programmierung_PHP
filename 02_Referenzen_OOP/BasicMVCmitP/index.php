@@ -5,7 +5,7 @@
 $uri = $_SERVER['REQUEST_URI'];
 
 //Ist jeweils anzupassen
-define('DIRECTORY', '/Webgrundlagenskript/06_OOP/BasicMVCmitP');
+define('DIRECTORY', '/Grundlagen_Programmieren_PHP/02_Referenzen_OOP/BasicMVCmitP');
  
 switch ($uri) 
 {

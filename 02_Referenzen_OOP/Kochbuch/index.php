@@ -1,7 +1,7 @@
 <?php 
 
 $uri = $_SERVER['REQUEST_URI'];
-define('DIRECTORY', '/Webgrundlagenskript/06_OOP/Kochbuch');
+define('DIRECTORY', '/Grundlagen_Programmieren_PHP/02_Referenzen_OOP/Kochbuch');
  
 switch ($uri) 
 {
