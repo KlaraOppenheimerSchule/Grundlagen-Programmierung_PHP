@@ -1,0 +1,22 @@
+[
+    {
+        "id": 0,
+        "name": "Klaus Maier",
+        "phone": "111"
+    },
+    {
+        "id": 1,
+        "name": "Peter Lustig",
+        "phone": "111"
+    },
+    {
+        "id": 2,
+        "name": "Hans Otto Werner",
+        "phone": "111"
+    },
+    {
+        "id": 3,
+        "name": "Frederik Schenk",
+        "phone": "111"
+    }
+]

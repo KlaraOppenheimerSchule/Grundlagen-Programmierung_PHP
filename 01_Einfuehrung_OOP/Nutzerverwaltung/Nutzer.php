@@ -1,7 +1,7 @@
 <?php
 
 /* Definition der Klasse Mitarbeiter */
-    class Mitarbeiter
+    class Nutzer
     {
         private $vorname;     /* Eigenschaft */
         private $nachname;
