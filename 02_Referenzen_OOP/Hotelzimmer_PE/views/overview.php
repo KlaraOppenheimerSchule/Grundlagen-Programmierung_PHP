@@ -18,6 +18,9 @@
 						</td>
 					</tr>
 				<?php endforeach; ?>
+				<tr>
+					<td><label>Zimmer hinzufügen: <input type="submit" name="addRoom" value="Raum hinzufügen"></label></td>
+				</tr>
 			</table>
 		</form>
 	</body>

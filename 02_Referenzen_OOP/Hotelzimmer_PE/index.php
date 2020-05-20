@@ -23,6 +23,9 @@ if ($_POST) {
 			}
 		}
 	}
+	if (isset($_POST["addRoom"])){
+		$lo_main->addRoom();
+	}
 }
 
 
