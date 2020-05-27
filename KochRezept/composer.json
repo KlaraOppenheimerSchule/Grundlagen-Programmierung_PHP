@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "classmap": ["code"]
+  },
+  "require": {
+    "php" : "^7.4",
+    "ext-mbstring": "*",
+    "ext-curl": "*",
+    "ext-dom": "*",
+    "ext-pdo": "*",
+    "ext-json": "*"
+  }
+}
