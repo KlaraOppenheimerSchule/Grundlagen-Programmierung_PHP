@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ein Rezept hinzufügen</title>
+</head>
+<body>
+<button type="button" onclick="location='/index'">Homepage</button>
+<br>
+    <form method="post" action="">
+            <div id="recipeDiv">
+            <label>Rezept Name</label>
+            <input type="text" required id="recipeName" name="recipeName" placeholder="Pizza">
+                <br>
+            <label>Rezept Beschreibung</label>
+            <input type="text" required id="recipeDescription" name="recipeDescription" placeholder="Blablabla">
+                <br>
+            <label>Zubereitungszeit</label>
+            <input type="number" required id="recipePrepareTime" name="recipePrepareTime" placeholder="500 (in sekunden)">
+            </div>
+        <br>
+        <button type="button" onclick="addMoreIngredientsDivs()">Weitere Zutaten hinzufügen</button>
+        <br>
+        <div id="inliner" style="display: inline-flex">
+            <div id="ingredientsDiv">
+                <label>Zutat:</label>
+                <button type="button" disabled id="ingredientsDivRB" onclick="removeIngredientsDiv(this.id)">Entferne Zutat</button>
+                <br>
+                    <label>Name:</label>
+                    <br>
+                    <input type="text" required id="ingredientsName" name="ingredientsName[]">
+                    <br>
+                    <label>Menge:</label>
+                    <br>
+                    <input type="text" required id="ingredientsHowMany" name="ingredientsHowMany[]">
+                    <br>
+                    <label>Kalorien pro Stück:</label>
+                    <br>
+                    <input type="text" required id="ingredientsCalories" name="ingredientsCalories[]">
+                <br>
+                </div>
+        </div>
+        <br>
+        <input type="submit" value="Abschiken">
+    </form>
+</body>
+<script>
+    const ingredientsDiv = document.getElementById("ingredientsDiv");
+    var lastIngredientsDivId = 1;
+    function addMoreIngredientsDivs()
+    {
+        let cln = ingredientsDiv.cloneNode(true);
+        cln.id = 'ingredientsDiv' + lastIngredientsDivId;
+        document.getElementById('ingredientsDiv').append(cln);
+        lastIngredientsDivId++;
+    }
+
+    function removeIngredientsDiv(divId)
+    {
+        document.getElementById("ingredientsDiv" + divId).remove();
+    }
+</script>
+</html>
