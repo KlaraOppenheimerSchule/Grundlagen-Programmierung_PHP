@@ -27,6 +27,11 @@ class Mitarbeiter{
     }
 }
 
-$mitarbeiter = new Mitarbeiter('John','Doe');
+$vorname = readline('vorname eingeben: ');
+$nachname = readline('Nachname eingeben: ');
+
+$mitarbeiter = new Mitarbeiter($vorname,$nachname);
+
+
 
 print $mitarbeiter->getNachname();
