@@ -33,5 +33,6 @@ $nachname = readline('Nachname eingeben: ');
 $mitarbeiter = new Mitarbeiter($vorname,$nachname);
 
 
-
+echo $mitarbeiter->getVorname()." ";
 print $mitarbeiter->getNachname();
+ 
