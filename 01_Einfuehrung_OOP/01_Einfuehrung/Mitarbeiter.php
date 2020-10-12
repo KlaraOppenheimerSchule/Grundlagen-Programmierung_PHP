@@ -14,7 +14,7 @@ class Mitarbeiter{
         return $this->vorname;
     }
 
-    public function setVorname(){
+    public function setVorname($vorname){
         $this->vorname = $vorname;
     }
 
@@ -22,12 +22,12 @@ class Mitarbeiter{
         return $this->nachname;
     }
 
-    public function setNachname(){
+    public function setNachname($nachname){
         $this->nachname = $nachname;
     }
 }
 
-$vorname = readline('vorname eingeben: ');
+$vorname = readline('Vorname eingeben: ');
 $nachname = readline('Nachname eingeben: ');
 
 $mitarbeiter = new Mitarbeiter($vorname,$nachname);
@@ -35,4 +35,17 @@ $mitarbeiter = new Mitarbeiter($vorname,$nachname);
 
 echo $mitarbeiter->getVorname()." ";
 print $mitarbeiter->getNachname();
+
+echo("\n \n");
+
+$nachname = readline('Nachname ändern: ');
+
+$mitarbeiter->setNachname($nachname);
+
+
+echo $mitarbeiter->getVorname()." ";
+echo $mitarbeiter->getNachname();
+
+
+
  
