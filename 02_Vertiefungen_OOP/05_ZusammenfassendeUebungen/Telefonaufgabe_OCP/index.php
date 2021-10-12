@@ -8,8 +8,9 @@ use TelefonaufgabeOCP\Akkus\LithiumIonAkku;
 use TelefonaufgabeOCP\Akkus\NeuerAkkutyp;
 
 
-#require_once 'Telefone\MobilTelefon.php';
-#require_once 'Akkus\Akku.php';
+require_once 'Telefone\MobilTelefon.php';
+require_once 'Akkus\Akku.php';
+
 
 function __autoload($classname) {
     $lastSlash = strpos($classname, '\\') + 1;
