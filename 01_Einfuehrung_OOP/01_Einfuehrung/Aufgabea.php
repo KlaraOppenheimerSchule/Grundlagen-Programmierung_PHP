@@ -2,7 +2,7 @@
 <html lang="">
 
 <head>
-    <title>Aufgabe Seite 16</title>
+    <title>Mathefunktionen</title>
     <meta charset="UTF-8">
 
 </head>
