@@ -13,7 +13,7 @@
     <label><input type="text" name="Zahl[]"  /></label>
     </br>
     <input type="submit"/>
-    <a href="Aufgabea.php"><label>Zurücksetzen</label></a>
+    <a href="Aufgabe_A_PB.php"><label>Zurücksetzen</label></a>
 </form>
 <?php
 if(empty($_POST["Zahl"])){
