@@ -41,6 +41,7 @@ class Moutrechner
             switch($this->polclass){
 
                 case $this->polclass == "A":
+
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1310;
                     echo " €";
                     break;
@@ -64,12 +65,14 @@ class Moutrechner
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.2140;
                     echo " €";
 
+
             }
         }
         elseif ($this->axis <= "3"){
             switch($this->polclass){
 
                 case $this->polclass == "A":
+
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1250;
                     echo " €";
                     break;
@@ -93,7 +96,6 @@ class Moutrechner
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.2080;
                     echo " €";
                     break;
-
             }
         }
     }
