@@ -41,28 +41,28 @@ class Moutrechner
             switch($this->polclass){
 
                 case $this->polclass == "A":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 13.10;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1310;
+                    echo " €";
                     break;
                 case $this->polclass == "B":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 15.20;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1520;
+                    echo " €";
                     break;
                 case $this->polclass == "C":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 16.30;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1630;
+                    echo " €";
                     break;
                 case $this->polclass == "D":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 19.40;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1940;
+                    echo " €";
                     break;
                 case $this->polclass == "E":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 20.40;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.2040;
+                    echo " €";
                     break;
                 case $this->polclass == "F":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 21.40;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.2140;
+                    echo " €";
 
             }
         }
@@ -70,30 +70,30 @@ class Moutrechner
             switch($this->polclass){
 
                 case $this->polclass == "A":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 12.50;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1250;
+                    echo " €";
                     break;
                 case $this->polclass == "B":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 14.60;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1460;
+                    echo " €";
                     break;
                 case $this->polclass == "C":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 15.70;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1570;
+                    echo " €";
                     break;
                 case $this->polclass == "D":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 18.80;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1880;
+                    echo " €";
                     break;
                 case $this->polclass == "E":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 19.80;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1980;
+                    echo " €";
                     break;
                 case $this->polclass == "F":
-                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 20.80;
-                    echo " ct";
+                    echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.2080;
+                    echo " €";
                     break;
-                
+
             }
         }
     }
