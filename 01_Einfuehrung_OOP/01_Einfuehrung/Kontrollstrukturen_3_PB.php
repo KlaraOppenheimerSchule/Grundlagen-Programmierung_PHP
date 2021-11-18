@@ -9,9 +9,9 @@
 <body>
 
 <form method="post" action="<?php echo$_SERVER["PHP_SELF"]; ?>">
-    <label>Schadstoffklasse: <input type="text" name="Zahl[]" /></label>
-    <label>Gefahrene Kilometer: <input type="text" name="Zahl[]"  /></label>
-    <label>Anzahl der Achsen: <input type="text" name="Zahl[]"  /></label>
+    <label>Schadstoffklasse: <input type="text" name="Zahl[]" style="text-transform: uppercase"/></label>
+    <label>Gefahrene Kilometer: <input type="text" name="Zahl[]" style="text-transform: uppercase" /></label>
+    <label>Anzahl der Achsen: <input type="text" name="Zahl[]" style="text-transform: uppercase" /></label>
     </br>
     <input type="submit"/>
     <a href="Kontrollstrukturen_3_PB.php"><label>Zurücksetzen</label></a>
