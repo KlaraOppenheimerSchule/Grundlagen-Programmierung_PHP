@@ -10,8 +10,8 @@
 
 <form method="post" action="<?php echo$_SERVER["PHP_SELF"]; ?>">
     <label>Schadstoffklasse: <input type="text" name="Zahl[]" style="text-transform: uppercase"/></label>
-    <label>Gefahrene Kilometer: <input type="text" name="Zahl[]" style="text-transform: uppercase" /></label>
-    <label>Anzahl der Achsen: <input type="text" name="Zahl[]" style="text-transform: uppercase" /></label>
+    <label>Gefahrene Kilometer: <input type="text" name="Zahl[]" /></label>
+    <label>Anzahl der Achsen: <input type="text" name="Zahl[]"  /></label>
     </br>
     <input type="submit"/>
     <a href="Kontrollstrukturen_3_PB.php"><label>Zurücksetzen</label></a>
@@ -40,28 +40,28 @@ class Moutrechner
         if($this->axis >= "4"){
             switch($this->polclass){
 
-                case $this->polclass == "A":
+                case $this->polclass == "A" || "a":
 
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1310;
                     echo " €";
                     break;
-                case $this->polclass == "B":
+                case $this->polclass == "B" || "b":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1520;
                     echo " €";
                     break;
-                case $this->polclass == "C":
+                case $this->polclass == "C" || "c":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1630;
                     echo " €";
                     break;
-                case $this->polclass == "D":
+                case $this->polclass == "D" || "d":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1940;
                     echo " €";
                     break;
-                case $this->polclass == "E":
+                case $this->polclass == "E" || "e":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.2040;
                     echo " €";
                     break;
-                case $this->polclass == "F":
+                case $this->polclass == "F" || "f":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.2140;
                     echo " €";
 
@@ -71,28 +71,28 @@ class Moutrechner
         elseif ($this->axis <= "3"){
             switch($this->polclass){
 
-                case $this->polclass == "A":
+                case $this->polclass == "A" || "a":
 
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1250;
                     echo " €";
                     break;
-                case $this->polclass == "B":
+                case $this->polclass == "B" || "b":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1460;
                     echo " €";
                     break;
-                case $this->polclass == "C":
+                case $this->polclass == "C" || "c":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1570;
                     echo " €";
                     break;
-                case $this->polclass == "D":
+                case $this->polclass == "D" || "d":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1880;
                     echo " €";
                     break;
-                case $this->polclass == "E":
+                case $this->polclass == "E" || "e":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.1980;
                     echo " €";
                     break;
-                case $this->polclass == "F":
+                case $this->polclass == "F" || "f":
                     echo "Die Moutgebühr beträgt: " . $this->dkil *= 0.2080;
                     echo " €";
                     break;
