@@ -13,7 +13,7 @@ private int $pinamount;
     }
     public function getPinCollection(): array
     {
-        return $this->printCheckPins();
+        return $this->checkPins();
     }
     public function generatePins(): string
     {
@@ -26,10 +26,9 @@ private int $pinamount;
         var_dump($stringpin);
         return $stringpin;
     }
-    public function printCheckPins(): array
+    public function checkPins(): array
     {
         $i = 0;
-
             while($i < $this->pinamount)
             {
                 $stringpin = $this->generatePins();
@@ -38,10 +37,9 @@ private int $pinamount;
                     $this->pincollection[] = $stringpin;
                     $i++;
                 }
-
             }
         return $this->pincollection;
     }
 }
-$obj = new PinGenerator(10, 8);
+$obj = new PinGenerator(0, 8);
 xdebug_var_dump($obj->getPinCollection());
