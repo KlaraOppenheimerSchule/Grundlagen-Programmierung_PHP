@@ -38,11 +38,8 @@ private int $pinamount;
                     $this->pincollection[] = $stringpin;
                     $i++;
                 }
-                elseif(in_array($stringpin, $this->pincollection) == true)
-                {
-                    continue;
-                }
-        }
+
+            }
         return $this->pincollection;
     }
 }
