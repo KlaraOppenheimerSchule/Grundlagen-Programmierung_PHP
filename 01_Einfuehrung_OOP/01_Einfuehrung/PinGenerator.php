@@ -11,13 +11,16 @@ private int $pinamount;
         $this->pinlength = $pinlength;
         $this->pinamount = $pinamount;
     }
-
+    public function getPinCollection(): array
+    {
+        return $this->printCheckPins();
+    }
     public function generatePins(): string
     {
         $intpin = [];
             for($x = 0; $x <= $this->pinlength; $x++)
             {
-                $intpin[$x] = rand(1, 9);
+                $intpin[$x] = rand(0, 9);
             }
         $stringpin = implode($intpin);
         var_dump($stringpin);
@@ -43,5 +46,5 @@ private int $pinamount;
         return $this->pincollection;
     }
 }
-$pls = new PinGenerator(1, 4);
-xdebug_var_dump($pls->printCheckPins());
+$obj = new PinGenerator(10, 8);
+xdebug_var_dump($obj->getPinCollection());
